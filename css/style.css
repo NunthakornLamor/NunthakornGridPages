@@ -1,0 +1,482 @@
+
+* {
+    box-sizing: border-box;
+  }
+
+  
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  [class*="col-"] {
+    float: left;
+    padding: 15px;
+  }
+  
+  html {
+    font-family: "Heebo", sans-serif;
+  }
+  
+  .header {
+    background-color: #252525;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 5%;
+    color: #ffffff;
+  }
+
+  .header .logo {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 10%;
+  }
+
+  .header .logo:hover {
+    cursor: pointer;
+  }
+
+  .about-me {
+    display: flex;
+    gap: 5%;
+    padding: 1%;
+    border-radius: 10px;
+    align-items: center !important;
+    justify-content: center !important;
+    background: linear-gradient(to right, #f4f4f4 20%, rgb(204, 187, 187) 40%, #f4f4f4 60%, #FFF 80%);
+    background-size: 200% auto;
+    animation: shine 3s linear infinite;
+    
+  }
+  @keyframes shine {
+    to {
+    background-position: 200% center;
+    }
+    }
+  .about-me :hover{
+    cursor: pointer;
+  }
+
+  .about-me a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    width: 120px;
+
+  }
+
+  .background{
+    width: 100%;
+    background-color: black;
+  }
+  
+  .menu ul {
+    list-style-type: none;
+    margin: 0;
+    margin-top: 15%;
+    padding: 0;
+    border-right: none;
+    border-bottom: 1px solid #ffffff;
+  }
+
+  .active {
+    background-color: #c1c1c1;
+    color: #000 !important;
+  }
+  
+  .menu li {
+    font-size: 100%;
+    border-radius: 10px;
+    width: 80%;
+    padding: 8px;
+    text-align: center;
+    margin-bottom: 7px;
+    color: #c1c1c1;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  }
+  
+  .menu li:hover {
+    background-color: #c1c1c1;
+    color: #000;
+    cursor: pointer;
+  }
+  
+  .aside {
+    /* background-color: #33b5e5; */
+    padding: 10px;
+    color: #ffffff;
+    font-size: 14px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    background-color: #252525;
+    border-radius: 10px;
+    margin-top: 10%;
+  }
+
+  .aside h2 {
+    text-align: center;
+  }
+
+  .aside p {
+    padding: 3%;
+  }
+
+  .aside p:hover {
+    border-left: 3px solid #c546e4;
+    cursor: pointer;
+
+  }
+  
+  .footer {
+    background-color: #ffffff;
+    color: #000000;
+    font-size: 12px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0%;
+  }
+
+  .footer h1{
+    margin-bottom: 2%;
+  }
+
+  .footer-item {
+    width: 100%;
+    display: flex;
+    gap: 8%;
+    padding: 4%;
+  }
+
+
+  .footer a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+  }
+
+
+  .main{
+    color: white;
+    margin-top: 3%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .main h1{
+    font-size: 150%;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .main h3{
+    font-size: 250%;
+    margin-top: 0;
+    margin-bottom: 0;
+    text-align: center;
+  }
+
+  .main h2{
+    margin-top: 0;
+    font-size: 100%;
+    text-align: center;
+  }
+
+  .write {
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    animation: none;
+  }
+
+  .main-card{
+    margin-top: 10%;
+  }
+
+
+  .main-row {
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .card-wrap {
+    display: flex;
+    justify-content: center;
+    gap: 5%;
+    flex-direction: column;
+  }
+
+  
+  .card {
+    margin-bottom: 20%;
+    background-color: #1d1d1d;
+    border-radius: 20px;
+    width: 60vw;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .grey{
+    background-color: rgb(41, 41, 41);
+  }
+
+
+  .card:hover {
+    transform: scale(1.1);
+  }
+
+  .card h2{
+    color: #cbe2ff;
+  }
+
+
+  .card h2, .card p{
+    padding: 5%;
+  }
+
+  
+
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 150% }
+  }
+  @keyframes typinglow {
+    from { width: 0 }
+    to { width: 80% }
+  }
+
+  /* SHOWCASE PAGE PROPERTY */
+
+  .topic {
+    font-size: 140% !important;
+  }
+  .project-info {
+    margin-top: 3%;
+  }
+
+  .project-info p{
+    text-indent: 10%;
+    margin-top: 0;
+    margin-bottom: 5%;
+  }
+
+  .project-info h2{
+    margin-bottom: 2%;
+    font-size: 120% !important;
+  }
+
+  hr.solid {
+    border-top: 2px solid #bbb;
+  }
+
+  .btn-flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .such-a-btn:hover{
+    cursor: pointer;
+
+  }
+
+
+  .such-a-btn {
+    width: 120px;
+    padding: 2%;
+    color:#ffffff;
+    border-radius: 10px;
+    background-color: #55b0fb;
+    text-align: center;
+    animation: shine 3s linear infinite;
+    text-decoration: none;
+  }
+
+  .main .marks{
+    font-size: 80%;
+    color: #d3d3d3;
+  }
+
+  .project-info a{
+    color:cadetblue
+  }
+
+  
+  /* For mobile phones: */
+  [class*="col-"] {
+    width: 100%;
+  }
+
+  @media only screen and (min-width: 600px) {
+    .btn-flex{
+      justify-content: start;
+    }
+    .fixed {
+        top: 20px; 
+        position: sticky;
+      }
+    .about-me {
+        padding: 0.5%;
+    }
+    .menu ul{
+        border-right: 1px solid #ffffff;
+        border-bottom: none;
+    }
+    .card-wrap {
+        flex-direction: row;
+      }
+    .card {
+      width: 30vw;
+      margin-bottom: 5%;
+    }
+    .header {
+        gap: 25%;
+    }
+    .footer {
+        gap: 20%;
+        flex-direction: row;
+        align-items: start;
+      }
+    .write {
+        overflow: hidden; /* Ensures the content is not revealed until the animation */
+        white-space: nowrap;
+        animation: typing 5s steps(60, end) infinite;
+      }
+    .main{
+        color: white;
+        margin-top: 3%;
+        display: flex;
+        justify-content: start;
+        align-items: start;
+        flex-direction: column;
+      }
+    .main h1{
+        font-size: 250%;
+        margin-top: 0;
+        margin-bottom: 0;
+      }
+    
+    .main h3{
+        font-size: 350%;
+        margin-top: 0;
+        margin-bottom: 0;
+        text-align: start;
+      }
+    
+      .main h2{
+        margin-top: 0;
+        font-size: 100%;
+        text-align: start;
+      }
+    /* For tablets: */
+    .col-s-1 {width: 8.33%;}
+    .col-s-2 {width: 16.66%;}
+    .col-s-3 {width: 25%;}
+    .col-s-4 {width: 33.33%;}
+    .col-s-5 {width: 41.66%;}
+    .col-s-6 {width: 50%;}
+    .col-s-7 {width: 58.33%;}
+    .col-s-8 {width: 66.66%;}
+    .col-s-9 {width: 75%;}
+    .col-s-10 {width: 83.33%;}
+    .col-s-11 {width: 91.66%;}
+    .col-s-12 {width: 100%;}
+  }
+  @media only screen and (min-width: 768px) {
+    /* For desktop: */
+    .menu ul{
+        border-right: 1px solid #ffffff;
+        border-bottom: none;
+    }
+    .card-wrap {
+        flex-direction: row;
+      }
+      .card {
+        width: 20vw;
+        min-width: 200px;
+      }
+    .footer {
+        font-size: 12px;
+        padding: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: start;
+        flex-direction: row;
+        gap: 20%;
+    }
+    .write {
+        overflow: hidden; /* Ensures the content is not revealed until the animation */
+        white-space: nowrap; /* Keeps the content on a single line */
+        animation: 
+          typing 5s steps(60, end) infinite;
+      }
+    .main{
+        color: white;
+        margin-top: 3%;
+        display: flex;
+        justify-content: start;
+        align-items: start;
+        flex-direction: column;
+      }
+    .main h1{
+        font-size: 250%;
+        margin-top: 0;
+        margin-bottom: 0;
+      }
+    
+      .main h3{
+        font-size: 350%;
+        margin-top: 0;
+        margin-bottom: 0;
+      }
+    
+      .main h2{
+        margin-top: 0;
+        font-size: 120%;
+    
+      }
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+  }
+
+  @media only screen and (min-width: 1060px) {
+    .main h2{
+        margin-top: 0;
+        font-size: 150%;
+      }
+  }
+
+  @media only screen and (min-width: 1370px) {
+    .main h2{
+        margin-top: 0;
+        font-size: 200%;
+      }
+  }
+
+  .gradient {
+    background: #121FCF;
+background: linear-gradient(to right, #55b0fb 0%, #c546e4 100%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+
+  }
