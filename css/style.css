@@ -157,6 +157,7 @@
   }
   
   .footer {
+    text-align: center;
     grid-area: footer;
     background-color: #ffffff;
     color: #000000;
@@ -186,7 +187,8 @@
 
   .footer-item {
     width: 100%;
-    display: flex;
+    display: grid;
+    grid-template-columns: fit-content(5%) fit-content(95%);
     gap: 8%;
     padding: 4%;
   }
