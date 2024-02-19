@@ -56,9 +56,9 @@
   }
 
   .about-me {
-    height: 70%;
+    height: 50%;
     width: 100%;
-    max-width: 170px;
+    max-width: 150px;
     margin: auto;
     grid-area: 1 / 6 / span 1/ span 1 ;
     display: grid;
@@ -167,11 +167,13 @@
     display: grid;
     grid-template-columns: auto;
     gap: 0%;
+    place-items: center;
   }
 
   .contact {
     grid-area: 1 / 1 ;
     margin-left: 0;
+    place-items: center;
   }
 
   .my-repo {
@@ -588,6 +590,9 @@
     .col-10 {width: 83.33%;}
     .col-11 {width: 91.66%;}
     .col-12 {width: 100%;} */
+  }
+  .about-me{
+    height: 60%;
   }
 
   @media only screen and (min-width: 1060px) {
